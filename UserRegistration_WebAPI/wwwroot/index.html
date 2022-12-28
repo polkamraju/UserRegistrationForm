@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>To-do CRUD</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="js/site.js"></script>
+</head>
+<body>
+    <h1>User Registration Form : </h1>
+    <h3>Add an User</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+        <input type="text" id="add-userfirstname" placeholder="Enter First Name">
+        <input type="text" id="add-userlastname" placeholder="Enter Last Name">
+        <input type="text" id="add-designation" placeholder="Designation">
+        <input type="submit" value="Add">
+    </form>
+    
+    <p id="counter"></p>
+
+    <table>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Designation</th>
+        </tr>
+        <tbody id="todos"></tbody>
+    </table>
+
+    <script src="js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getItems();
+    </script>
+</body>
+</html>
